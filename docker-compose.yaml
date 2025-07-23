@@ -1,0 +1,8 @@
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - '7654:80'
+    volumes:
+      - ./dist:/usr/share/nginx/html
+    network_mode: none

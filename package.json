@@ -11,7 +11,9 @@
     "test": "vitest",
     "ts": "tsc",
     "prettier": "prettier --check .",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "deploy:docker:start": "npm run build && docker compose up -d",
+    "deploy:docker:end": "docker compose down"
   },
   "dependencies": {
     "clsx": "^2.1.1",

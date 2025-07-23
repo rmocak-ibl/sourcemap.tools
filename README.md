@@ -38,3 +38,11 @@ Inspired by https://sourcemaps.info/, but does everything on the client and does
    ```shell
    npm test
    ```
+
+## Docker Local Deployment
+To deploy the application in docker container with NO INTERNET ACCESS, run the following command:
+
+```shell
+npm run deploy:docker:start
+npm run deploy:docker:end
+```
